@@ -2,7 +2,9 @@ package com.example.kotlindesignpattern.singleton;
 
 public class JavaSingleton {
     //1- create private constructor
-    private JavaSingleton(){ }
+    private JavaSingleton(){
+        System.out.println("Singleton Design Pattern");
+    }
 
     //2- static reference of its class
     private static JavaSingleton instance = null;
