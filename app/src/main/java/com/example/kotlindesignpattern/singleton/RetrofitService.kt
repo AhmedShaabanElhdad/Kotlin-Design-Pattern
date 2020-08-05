@@ -24,10 +24,9 @@ object RetrofitService {
     }
 
 }
-interface MyAPI {
 
+interface MyAPI {
     @GET("getName")
     fun getHomePageData(
         @Query("id") id: String) :Call<String>
-
 }
