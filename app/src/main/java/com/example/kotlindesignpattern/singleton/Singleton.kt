@@ -4,6 +4,7 @@ object Singleton{
     init {
         println("singleton Design Pattern")
     }
+
 }
 
 
@@ -12,6 +13,8 @@ class SingletonWithLazyAndObject private constructor() {
     init {
         println("singleton Design Pattern")
     }
+
+
 
     //3- static method to get instance of class
     //4- Globally accessible object reference
