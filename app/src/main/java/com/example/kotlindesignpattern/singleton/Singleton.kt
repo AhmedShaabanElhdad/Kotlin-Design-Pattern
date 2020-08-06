@@ -4,12 +4,15 @@ object Singleton{
     init {
         println("singleton Design Pattern")
     }
+    fun doSomeThin(){
+
+    }
+
 
 }
 
-
 //1- create private constructor
-class SingletonWithLazyAndObject private constructor() {
+class SingletonWithLazyAndObject private constructor()  {
     init {
         println("singleton Design Pattern")
     }

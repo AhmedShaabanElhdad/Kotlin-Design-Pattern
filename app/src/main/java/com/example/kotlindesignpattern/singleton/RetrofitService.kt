@@ -30,3 +30,5 @@ interface MyAPI {
     fun getHomePageData(
         @Query("id") id: String) :Call<String>
 }
+
+
