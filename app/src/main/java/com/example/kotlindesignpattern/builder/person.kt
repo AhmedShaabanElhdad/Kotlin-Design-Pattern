@@ -223,7 +223,7 @@ fun testData() {
     myPerson.accessCode = ""
 
 
-    DSLPerson.student("Ahmed", "Shaaban", "male", addresses, "01069845358", "123456", "ahmed.shaaban.elhdah@gmail.com")
+    DSLPerson.dslPerson("Ahmed", "Shaaban", "male", addresses, "01069845358", "123456", "ahmed.shaaban.elhdah@gmail.com")
     {
         accessCode = accessCode
     }
@@ -264,7 +264,7 @@ class DSLPerson(
     )
 
     companion object {
-        inline fun student(
+        inline fun dslPerson(
             fname: String,
             lname: String,
             gender: String,
