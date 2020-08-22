@@ -1,0 +1,29 @@
+package com.example.kotlindesignpattern.factory.without_factory
+
+import android.R
+import android.graphics.Canvas
+import android.graphics.Color
+import android.graphics.Paint
+import android.graphics.Rect
+
+class Square(val paint: Paint, val canvas: Canvas, val width: Int):Shape{
+
+    override fun draw(x: Float, y: Float) {
+        paint.style = Paint.Style.FILL
+        paint.color = Color.MAGENTA
+        paint.strokeWidth = 3f
+        //canvas.drawPaint(paint)
+        // Use Color.parseColor to define HTML colors
+        // Use Color.parseColor to define HTML colors
+        //paint.color = Color.parseColor("#CD5C5C")
+
+        val rect = Rect()
+        rect.left = x.toInt()
+        rect.top = y.toInt()
+        rect.right = x.toInt() + width
+        rect.bottom = y.toInt() + width
+
+        canvas.drawRect(rect, paint)
+    }
+
+}
