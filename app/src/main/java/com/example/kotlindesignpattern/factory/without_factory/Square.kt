@@ -6,9 +6,9 @@ import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.Rect
 
-class Square(val paint: Paint, val canvas: Canvas, val width: Int):Shape{
+class Square(val paint: Paint, val canvas: Canvas, val width: Int){
 
-    override fun draw(x: Float, y: Float) {
+    fun draw(x: Float, y: Float) {
         paint.style = Paint.Style.FILL
         paint.color = Color.MAGENTA
         paint.strokeWidth = 3f

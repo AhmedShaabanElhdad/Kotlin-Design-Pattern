@@ -1,4 +1,4 @@
-package com.example.kotlindesignpattern.factory.without_factory
+package com.example.kotlindesignpattern.factory.factory
 
 import android.content.Context
 

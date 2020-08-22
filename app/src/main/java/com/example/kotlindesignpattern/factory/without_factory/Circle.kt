@@ -6,9 +6,9 @@ import android.graphics.Color
 import android.graphics.Paint
 
 
-class Circle(private val paint: Paint, private val canvas: Canvas, private val radius: Float) : Shape {
+class Circle(private val paint: Paint, private val canvas: Canvas, private val radius: Float) {
 
-    override fun draw(x: Float, y: Float) {
+    fun draw(x: Float, y: Float) {
         paint.style = Paint.Style.FILL
         paint.color = Color.BLACK
         paint.strokeWidth = 3f
