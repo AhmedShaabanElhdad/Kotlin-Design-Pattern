@@ -1,11 +1,8 @@
 package com.example.kotlindesignpattern
 
 import android.os.Bundle
-import android.util.AttributeSet
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.widget.ConstraintLayout
-import com.example.kotlindesignpattern.factory.without_factory.MyView
-import java.nio.file.attribute.AttributeView
+import com.example.kotlindesignpattern.factory.MyView
 
 
 class MainActivity : AppCompatActivity() {
@@ -13,20 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val myView= MyView(this)
         setContentView(myView)
-//        val mainView = findViewById<ConstraintLayout>(R.id.root)
-//
-//        val display = windowManager.defaultDisplay
-//        val width = display.width
-//        val height = display.height
-//
-//        val number_side = width / 100
-//        val number_down = height / 100
-
-//            mainView.addView(
-//                MyView(
-//                    this
-//                )
-//            )
 
 
     }
