@@ -13,11 +13,6 @@ class Rectangle(val paint: Paint, val canvas: Canvas, val width: Int, val height
         paint.style = Paint.Style.FILL
         paint.color = Color.BLUE
         paint.strokeWidth = 3f
-        //canvas.drawPaint(paint)
-        // Use Color.parseColor to define HTML colors
-        // Use Color.parseColor to define HTML colors
-        //paint.color = Color.parseColor("#CD5C5C")
-
         val rect = Rect()
         rect.left = x.toInt()
         rect.top = y.toInt()
