@@ -232,7 +232,7 @@ fun testData() {
 }
 
 
-class DSLPerson(
+class DSLPerson private constructor(
     val fname: String,
     val lname: String,
     val gender: String,
@@ -273,8 +273,7 @@ class DSLPerson(
             password: String,
             email: String,
             block: DSLPerson.Builder.() -> Unit
-        ) =
-            DSLPerson.Builder(fname, lname, gender, address, phone, password, email).apply(block)
+        ) = DSLPerson.Builder(fname, lname, gender, address, phone, password, email).apply(block)
                 .build()
     }
 
