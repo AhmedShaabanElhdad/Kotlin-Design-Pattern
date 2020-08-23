@@ -26,3 +26,22 @@ class FactoryShape(
 enum class Type {
     CIRCLE, SQUARE, RECTANGLE
 }
+
+
+
+object FactoryShape2 {
+
+    enum class Type {
+        CIRCLE, SQUARE, RECTANGLE
+    }
+
+    fun createShape(type: Type?,paint: Paint, canvas: Canvas, width: Int = 0, height: Int = 0, radius: Float = 0f): Shape? {
+        var shape: Shape? = null
+        when (type) {
+            Type.CIRCLE -> shape = Circle(paint,canvas,radius)
+            Type.SQUARE -> shape = Square(paint, canvas, width)
+            Type.RECTANGLE -> shape = Rectangle(paint, canvas, width, height)
+        }
+        return shape
+    }
+}
