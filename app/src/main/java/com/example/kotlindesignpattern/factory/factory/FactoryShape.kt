@@ -3,11 +3,13 @@ package com.example.kotlindesignpattern.factory.factory
 import android.graphics.Canvas
 import android.graphics.Paint
 
-class FactoryShape(private val paint: Paint, private val canvas: Canvas) {
-    var width: Int = 0
-    var height: Int = 0
+class FactoryShape(
+    private val paint: Paint,
+    private val canvas: Canvas,
+    var width: Int = 0,
+    var height: Int = 0,
     var radius: Float = 0f
-
+) {
 
 
     fun createShape(type: Type?): Shape? {
