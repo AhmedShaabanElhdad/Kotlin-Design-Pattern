@@ -45,3 +45,4 @@ object FactoryShape2 {
         return shape
     }
 }
+
